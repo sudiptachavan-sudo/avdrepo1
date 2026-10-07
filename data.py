@@ -7,5 +7,5 @@ data = {
 }
 
 print('student details')
-df = pd.dataframe(data)
+df = pd.DataFrame(data)
 print (data)
