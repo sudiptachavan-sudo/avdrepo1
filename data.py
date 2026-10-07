@@ -1,4 +1,5 @@
 import pandas as pd
+import requests
 
 data = {
     'name' : ['A', 'B', 'C'],
@@ -9,3 +10,7 @@ data = {
 print('student details')
 df = pd.DataFrame(data)
 print (data)
+
+print('API data')
+response = requests.get('https://jsonplaceholder.typicode.com/users')
+print(response.json())
